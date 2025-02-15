@@ -1,3 +1,5 @@
+/* Attribution fournie */
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -6,6 +8,8 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/* Balise */
 
 * {
     font-family: "League Spartan", serif;
@@ -33,13 +37,13 @@ h2 {
     font-size: 1rem;
     margin: 0;
     padding-bottom: 0;
-    border: 1px solid green;
+    color: white;
 }
 
 h3 {
     font-size: 1.2rem;
     font-weight: 500;
-    border: 1px solid rgb(58, 124, 58);
+    color: hsl(333, 80%, 67%);
 }
 
 img {
@@ -51,15 +55,28 @@ li {
     color: hsl(300, 43%, 22%);
     background-color: hsl(300, 24%, 96%);
     padding: 10px 20px;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
 }
 
 li::before {
-    content: "★★★★★ ";
+    content: "★ ★ ★ ★ ★ ";
     color: rgb(230, 173, 67);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     background-color: hsl(300, 24%, 96%);
-    margin: 0 12px;
+    margin-right: 1.5rem;
+}
+
+li:first-child {
+    position: relative;
+    left: -18rem;
+}
+
+li:nth-child(2) {
+    position: relative;
+    left: -9rem;
 }
 
 main {
@@ -71,28 +88,30 @@ main {
 }
 
 ul {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 60%;
     list-style: none;
+    padding: 0;
 }
 
+/* Class */
+
 .avis-colton, .avis-irene, .avis-anne {
-    border: 1px solid red;
     padding: 2.5rem;
     font-weight: 500;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
 }
 
 .avis-anne {
     position: relative;
     top: 30px;
-}
-
-.who {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
 }
 
 .avis-irene {
@@ -101,21 +120,43 @@ ul {
 }
 
 .bot-page{
-    border: 3px solid blue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     position: relative;
     height: 45%;
+    color: white;
+    font-weight: 500;
 }
 
 .presentation {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     width: 40%;
-    padding: 0 5rem 5rem 0;
+    height: auto;
+}
+
+.presentation p {
+    width: 70%;
+    margin-right: 3rem;
+}
+
+.top-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5rem;
 }
 
 .top-page, .bot-page {
     display: flex;
+    justify-content: center;
+}
+
+.who {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
 }
